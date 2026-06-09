@@ -8,5 +8,5 @@ for i in range (5):
     if i == 5:
         break       #chiude il ciclo
     
-numeri = [*range(1, 11)]    
+numeri = [*range(1, 11)]    #splat
 print(numeri)

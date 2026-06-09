@@ -22,3 +22,5 @@ saluta2("Mario")
 saluta2("Luigi", messaggio="Buongiorno")
 risultato = quadrato(4)
 print("quadrato di 4 =", risultato)
+
+
