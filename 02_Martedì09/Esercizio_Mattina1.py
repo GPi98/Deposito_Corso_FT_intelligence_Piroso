@@ -38,7 +38,7 @@ while contatore:
             for i in range(n):
                 numero = int(input("Inserisci elemento: "))
                 lista.append(numero)
-            for numero in lista:
+            for numero in lista:        #rivedere la parte quadrati
                 quadrati = lista[n]**2
             print(quadrati)
 
