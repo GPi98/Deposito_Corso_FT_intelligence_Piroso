@@ -35,12 +35,12 @@ class Calcolatrice:
         return a + b
     
 #uso del metodo statico senza creare istanza
-ristultato = Calcolatrice.somma(5, 3)
+risultato = Calcolatrice.somma(5, 3)
 
 print(risultato)
 #output 8
 
-class Contaore:
+class Contatore:
     numero_istanze = 0  #attributo di classe
     
     def __init__(self):
