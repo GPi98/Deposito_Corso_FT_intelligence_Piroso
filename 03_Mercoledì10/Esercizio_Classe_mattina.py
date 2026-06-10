@@ -34,3 +34,20 @@ class Libro:
     
 libro1 = Libro("Il Signore degli Anell", "J. R. R. Tolkien", 1380)
 print(libro1.descrizione())
+
+libro_l = []
+
+print("quanti libri vuoi inserire:")
+numeri = int(input())
+for i in range(numeri):
+    titolo = input("Titolo: ")
+    autore = input("Autore: ")
+    pagine = input("Numero pagine:")
+    l = Libro(titolo, autore, pagine)
+    libro_l.append(l)
+for i in range(numeri):
+    print(libro_l[i].descrizione())
+#for l in lista_l:          consigliata dal prof
+#l.descrizione   
+    
+    
