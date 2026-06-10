@@ -77,24 +77,23 @@ class Garage:
                     print("ERRORE targa non presente")        
 
 
-    
 contatore = False
-garage = Garage(15) 
+garage = Garage(15)
 
 while contatore:
-    print("scegli operazione")
+    print("Scegli operazioni:")
     scelta = input()
     
     match scelta:
-
         case "1":
             print("Posti liberi: ", garage.posti_liberi())
         case "2":
-            garage.parcheggia()
+            garage.parcheggia()    
         case "3":
             garage.rimuovi()
         case "0":
             contatore = False
         case _:
-            print("ERRORE Digitazione")    
+            print("ERRORE Digitazione")
+ 
     
