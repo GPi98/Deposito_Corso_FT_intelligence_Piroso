@@ -55,3 +55,4 @@ c2 = Contatore()
 
 Contatore.mostra_numero_istanze()
 #Sono state create 2 istanze
+
