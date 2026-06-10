@@ -4,22 +4,26 @@ class Punto:
         self.x = x
         self.y = y
     
-    def modifica_punto(self, n_x, n_y):
-        self.x = n_x
-        self.y = n_y
+    def muovi_punto(self, n_x, n_y):
+        self.distanza_da_origine(n_x, n_y)
+        self.x += n_x
+        self.y += n_y
         
-    def distanza_da_origine(self):
+    def distanza_da_origine(self, n_x, n_y):
         
-        distanza_x =  self.x
-        distanza_y =  self.y
+        distanza_x =  self.x - n_x
+        distanza_y =  self.y - n_y
+        print(distanza_x, ":", distanza_y)
         
-        return distanza_x, distanza_y
     
 
     
-punto1 = Punto(1,2)         #creazione oggetto
+punto1 = Punto(1,2)    #creazione oggetto
+dx = 3
+dy = 5
+punto1.muovi_punto(3,5)
 
-print(punto1.distanza_da_origine())
+print(punto1)
 
 class Libro:
     
@@ -27,7 +31,7 @@ class Libro:
         self.titolo = titolo
         self.autore = autore
         self.pagine = pagine
-    
+
     def descrizione(self):
         return "Il libro ", self.titolo," è stato scritto da", self.autore," e ha ", self.pagine, "pagine"
         
